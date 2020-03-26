@@ -34,7 +34,7 @@ class Scraper
     arr.each do |element|
       if element.attribute("href").value.include?("twitter")
         obj[:twitter] = element.attribute("href").value
-      elsif arr.attribute("href").value.include?("linkedin")
+      elsif element.attribute("href").value.include?("linkedin")
         obj[:linkedin] = element.attribute("href").value
       elsif element.attribute("href").value.include?("github")
         obj[:github] = element.attribute("href").value
