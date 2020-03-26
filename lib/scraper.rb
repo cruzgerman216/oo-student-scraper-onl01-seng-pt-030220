@@ -29,7 +29,7 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
-    arr = doc.css(".vitals-container .social-icon-container a href").first
+    arr = doc.css(".vitals-container .social-icon-container a attribute").first
     puts arr
   end
 end
