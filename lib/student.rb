@@ -12,6 +12,7 @@ class Student
 
   def self.create_from_collection(students_array)
     student = Student.new(students_array)
+    student
   end
 
   def add_student_attributes(attributes_hash)
