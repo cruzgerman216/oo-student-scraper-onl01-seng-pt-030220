@@ -44,7 +44,7 @@ class Scraper
         obj[:bio] = element.attribute("href").value
       else
         obj[:profile_quote] = element.attribute("href").value
-          
+
       end
     end
      obj
