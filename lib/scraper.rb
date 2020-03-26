@@ -30,7 +30,8 @@ class Scraper
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
     arr = doc.css(".vitals-container .social-icon-container a")
-    puts arr
+
+    puts arr[0].attribute("href")
   end
 end
 
