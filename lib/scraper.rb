@@ -43,7 +43,7 @@ class Scraper
       end
     end
 
-     obj[:profile_quote] = doc.css("div.main-wrapper.profile .vitals-text-container .profile-quote p").text
+     obj[:profile_quote] = doc.css(".vitals-container .vitals-text-container .profile-quote").text
      obj[:bio] = doc.css("div.main-wrapper .content-holder .description-holder p").text
       puts obj
   end
