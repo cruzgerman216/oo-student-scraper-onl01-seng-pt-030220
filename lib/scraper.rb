@@ -38,7 +38,7 @@ class Scraper
         obj[:linkedin] = element.attribute("href").value
       elsif element.attribute("href").value.include?("github")
         obj[:github] = element.attribute("href").value
-      elsif element.attribute("href").value.include?("blog")
+      elsif element.attribute("href").value.include?(".com")
         obj[:blog] = element.attribute("href").value
       elsif element.attribute("href").value.include?("bio")
         obj[:bio] = element.attribute("href").value
