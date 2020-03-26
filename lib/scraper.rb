@@ -45,5 +45,3 @@ class Scraper
      obj
   end
 end
-
-
