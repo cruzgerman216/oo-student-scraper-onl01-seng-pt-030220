@@ -42,7 +42,10 @@ class Scraper
         obj[:blog] = element.attribute("href").value
       end
     end
-    puts obj
+    
+     obj[:profile_quote] = doc.css(".main-wrapper.profile .vitals-text-container .profile-quote").text 
+     obj[:bio] = doc.css("main-wrapper.profile .description-holder p").text
+     obj
   end
 end
 
