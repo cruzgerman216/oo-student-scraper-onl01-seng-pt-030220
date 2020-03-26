@@ -26,6 +26,6 @@ class Student
   end
 
   def self.all
-    @all
+    @all.to_ary
   end
 end
