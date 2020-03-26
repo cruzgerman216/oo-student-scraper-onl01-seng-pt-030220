@@ -42,6 +42,7 @@ class Scraper
         obj[:blog] = arr.attribute("href").value
       end
     end
+    puts obj
   end
 end
 
