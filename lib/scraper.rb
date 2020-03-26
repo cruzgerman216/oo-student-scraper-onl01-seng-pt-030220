@@ -32,7 +32,7 @@ class Scraper
     arr = doc.css(".vitals-container .social-icon-container a")
     obj = {}
     arr.each do |element|
-      if arr.attribute("href").value.include?("twitter")
+      if element.attribute("href").value.include?("twitter")
         obj[:twitter] = element.attribute("href").value
       elsif arr.attribute("href").value.include?("linkedin")
         obj[:linkedin] = element.attribute("href").value
