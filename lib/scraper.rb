@@ -33,13 +33,13 @@ class Scraper
     obj = {}
     arr.each do |element|
       if arr.attribute("href").value.include?("twitter")
-        obj[:twitter] = arr.attribute("href").value
+        obj[:twitter] = element.attribute("href").value
       elsif arr.attribute("href").value.include?("linkedin")
-        obj[:linkedin] = arr.attribute("href").value
+        obj[:linkedin] = element.attribute("href").value
       elsif social.attribute("href").value.include?("github")
-        obj[:github] = arr.attribute("href").value
+        obj[:github] = element.attribute("href").value
       else
-        obj[:blog] = arr.attribute("href").value
+        obj[:blog] = element.attribute("href").value
       end
     end
     puts obj
